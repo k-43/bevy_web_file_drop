@@ -1603,7 +1603,7 @@ dependencies = [
 
 [[package]]
 name = "bevy_web_file_drop"
-version = "0.2.2"
+version = "0.3.0"
 dependencies = [
  "bevy",
  "bevy_blob_loader",
@@ -2369,7 +2369,7 @@ dependencies = [
 
 [[package]]
 name = "example"
-version = "0.2.2"
+version = "0.3.0"
 dependencies = [
  "bevy",
  "bevy_web_file_drop",
