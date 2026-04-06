@@ -37,6 +37,8 @@ fn read_file_drops(
     mut events: MessageReader<FileDragAndDrop>,
 ) {
     for event in events.read() {
+        info!("> {event:?}");
+
         if let FileDragAndDrop::DroppedFile { path_buf, .. } = event {
             #[cfg(target_family = "wasm")]
             let path = String::from(path_buf.to_str().unwrap());

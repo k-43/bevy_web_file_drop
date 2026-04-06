@@ -31,14 +31,14 @@
           with pkgs;
           [
             alsa-lib
+            libX11
+            libXcursor
+            libXi
+            libXrandr
             libxkbcommon
             udev
             vulkan-loader
             wayland
-            xorg.libX11
-            xorg.libXcursor
-            xorg.libXi
-            xorg.libXrandr
           ]
         );
 
@@ -97,7 +97,7 @@
           LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath build_inputs;
         };
 
-        formatter = pkgs.nixfmt-rfc-style;
+        formatter = pkgs.nixfmt;
       }
     );
 }

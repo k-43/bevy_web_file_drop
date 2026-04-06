@@ -1,3 +1,5 @@
-dist
-result
-target
+.direnv/
+.envrc
+dist/
+result/
+target/

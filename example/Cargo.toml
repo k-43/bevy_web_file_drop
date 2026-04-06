@@ -7,8 +7,8 @@ repository.workspace = true
 edition.workspace = true
 
 [dependencies]
-bevy = "0.17.2"
-bevy_web_file_drop = { path = ".." }
+bevy = "0.18.1"
+bevy_web_file_drop.path = ".."
 js-sys.workspace = true
-wasm-bindgen-futures = "0.4.53"
+wasm-bindgen-futures = "0.4.67"
 wasm-bindgen.workspace = true
