@@ -18,11 +18,12 @@ license = "MIT OR Apache-2.0"
 
 [workspace.dependencies]
 js-sys = "0.3.94"
+bevy = { default-features = false, version = "0.18.1" }
 wasm-bindgen = "0.2.117"
 
 [dependencies]
-bevy = "0.18.1"
 bevy_blob_loader = "0.3.0"
+bevy = { workspace = true, features = ["3d_api"] }
 js-sys.workspace = true
 wasm-bindgen.workspace = true
 
